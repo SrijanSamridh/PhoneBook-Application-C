@@ -1,12 +1,19 @@
 #include <stdio.h>
 #include "Services/get.c"
 #include "Services/post.c"
+#include <ctype.h> // Include ctype.h for tolower
 
+// Function to convert a string to lowercase
+void toLowerCase(char *str) {
+    for (int i = 0; str[i]; i++) {
+        str[i] = tolower(str[i]);
+    }
+}
 int main(void)
 {
     const char *baseUrl = "https://c-project-backend-server-srijansamridh.vercel.app";
-    const char *getUrl = "http://localhost:8080/api/get";    // URL for GET request
-    const char postUrl[] = "http://localhost:8080/api/save"; // URL for POST request
+    const char *getUrl = "https://c-project-backend-server-srijansamridh.vercel.app/api/get";    // URL for GET request
+    const char postUrl[] = "https://c-project-backend-server-srijansamridh.vercel.app/api/save"; // URL for POST request
     int choice;
     char name[20];
     char number[20];
@@ -39,6 +46,9 @@ int main(void)
             printf("Enter your number: ");
             scanf("%s", number);
 
+            // Convert name to lowercase
+            toLowerCase(name);
+
             // Creating JSON data string
             char postData[100];
             snprintf(postData, sizeof(postData), "{\"name\": \"%s\", \"number\": \"%s\"}", name, number); // Properly format JSON
@@ -53,7 +63,8 @@ int main(void)
             // Search for a number
             printf("Enter the name to search for: ");
             scanf("%s", name);
-
+            // Convert name to lowercase
+            toLowerCase(name);
             if (searchNumber(name) != 0)
             {
                 fprintf(stderr, "Search failed.\n");

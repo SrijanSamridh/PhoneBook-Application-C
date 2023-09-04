@@ -51,7 +51,7 @@ int searchNumber(const char* name) {
     if (curl) {
         // Set the URL for the GET request
         char url[100];
-        snprintf(url, sizeof(url), "http://localhost:8080/api/search/%s", name);
+        snprintf(url, sizeof(url), "https://c-project-backend-server-srijansamridh.vercel.app/api/search/%s", name);
         curl_easy_setopt(curl, CURLOPT_URL, url);
 
         // set the header
