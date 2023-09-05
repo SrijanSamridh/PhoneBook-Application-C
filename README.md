@@ -30,13 +30,13 @@ This project is a PhoneBook application implemented in C, with a Node.js backend
 4. Access the PhoneBook application in your web browser:
     ```shell
     https://c-project-backend-server-srijansamridh.vercel.app
-#Usage
+## Usage
 
 • Add new contacts by providing a name and phone number.
 • View and search for contacts.
 • Delete contacts by selecting them and clicking the "Delete" button.
 • The backend server manages data storage and retrieval.
-#Contributing
+## Contributing
 
 If you'd like to contribute to this project, please follow these guidelines:
 
