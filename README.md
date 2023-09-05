@@ -31,20 +31,18 @@ This project is a PhoneBook application implemented in C, with a Node.js backend
     ```shell
     https://c-project-backend-server-srijansamridh.vercel.app
 ## Usage
-
-• Add new contacts by providing a name and phone number.
-• View and search for contacts.
-• Delete contacts by selecting them and clicking the "Delete" button.
-• The backend server manages data storage and retrieval.
+- Add new contacts by providing a name and phone number.
+- View and search for contacts.
+- The backend server manages data storage and retrieval.
 ## Contributing
 
 If you'd like to contribute to this project, please follow these guidelines:
 
-• Fork the repository.
-• Create a new branch for your feature: git checkout -b feature-name
-• Commit your changes: git commit -m 'Add some feature'
-• Push to your branch: git push origin feature-name
-• Create a pull request.
+- Fork the repository.
+- Create a new branch for your feature: git checkout -b feature-name
+- Commit your changes: git commit -m 'Add some feature'
+- Push to your branch: git push origin feature-name
+- Create a pull request.
 
 <img width="535" alt="Screenshot 2023-09-06 at 1 24 16 AM" src="https://github.com/SrijanSamridh/PhoneBook-Application-C/assets/74289654/9fe62627-6a51-4e61-aa15-2eacbcd0ae4c">
 
