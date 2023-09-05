@@ -1,6 +1,6 @@
 # PhoneBook Application in C with Node.js Backend
 
-This project is a PhoneBook application implemented in C, with a Node.js backend server. It allows users to manage their contacts effectively.
+This project is a PhoneBook application implemented in C, with a Node.js backend server and MongoDB as Database. It allows users to manage their contacts effectively.
 
 ## Features
 
