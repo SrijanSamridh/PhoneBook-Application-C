@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include "Services/get.c"
 #include "Services/post.c"
-#include <ctype.h> // Include ctype.h for tolower
+#include "constants/constant.c"
 
-// Function to convert a string to lowercase
-void toLowerCase(char *str) {
-    for (int i = 0; str[i]; i++) {
-        str[i] = tolower(str[i]);
-    }
-}
 int main(void)
 {
+    // Print welcome text
+    welcomeText();
+
+    // API URLs
     const char *baseUrl = "https://c-project-backend-server-srijansamridh.vercel.app";
     const char *getUrl = "https://c-project-backend-server-srijansamridh.vercel.app/api/get";    // URL for GET request
     const char postUrl[] = "https://c-project-backend-server-srijansamridh.vercel.app/api/save"; // URL for POST request
+
+    // variables
     int choice;
     char name[20];
     char number[20];
